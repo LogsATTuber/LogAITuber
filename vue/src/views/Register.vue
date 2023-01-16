@@ -3,24 +3,27 @@
     <div class="register">
       <div class="register-content">
     <div >
-      <div style="color: #ef73d3;font-size: 30px;font-weight: bold;text-align: center;padding: 30px">
+      <div style="font-size: 30px;font-weight: bold;text-align: center;margin-top: 30px ;padding: 30px">
         欢迎注册
 
       </div>
-      <el-form ref="form" :model="form" size="normal" style="width: 60%;margin-left: 83px"
+      <el-form ref="form" :model="form" size="normal"
                :rules="rules">
-        <el-form-item label="用户名" style="padding-left: 14px" prop="username">
-          <el-input v-model="form.username" style="padding-left: 14px" ></el-input>
+        <el-form-item  style="margin-top: 20px" prop="username">
+          <el-input v-model="form.username" style="width: 260px" ></el-input>
+          <label>用户名</label>
         </el-form-item>
-        <el-form-item label="密 码" style="padding-left: 24px" prop="password">
-          <el-input  style="margin-left: 14px" v-model ="form.password" show-password ></el-input>
+        <el-form-item style="margin-top: 20px"  prop="password">
+          <el-input  style="width: 260px" v-model ="form.password" show-password ></el-input>
+          <lable style="color: aqua">密码</lable>
         </el-form-item>
-        <el-form-item label="确认密码" prop="confirm">
-          <el-input  style="margin-left: 14px" v-model ="form.confirm" show-password ></el-input>
-        </el-form-item>
-        <el-form-item style="margin-left: 160px">
-          <el-button type="primary" size="small" @click="back">返回</el-button>
-          <el-button type="primary" size="small" @click="register">立即注册</el-button>
+        <el-form-item style="margin-top: 20px" prop="confirm">
+          <el-input  style="width: 260px" v-model ="form.confirm" show-password ></el-input>
+          <label>确认密码</label>
+        </el-form-item >
+        <el-form-item class="button-container">
+          <el-button type="primary" class="login-button" @click="back">返回</el-button>
+          <el-button type="primary" class="login-button" @click="register">立即注册</el-button>
         </el-form-item>
       </el-form>
     </div>

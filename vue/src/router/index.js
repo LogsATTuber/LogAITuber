@@ -4,7 +4,7 @@ import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import Model from "../views/Model.vue";
 
-import ModelScene from "../views/ModelScene.vue";
+
 import Mocap from "../views/Mocap.vue";
 import Area from "../views/Area.vue";
 import OtherArea from "../views/OtherArea.vue";
@@ -23,11 +23,6 @@ const routes = [
     component: Layout,
     redirect:'/login',
     children:[
-      {
-        path: '/modelscene',
-        name: 'modelscene',
-        component: ModelScene,
-      },
       {
         path: '/model',
         name: 'Model',
