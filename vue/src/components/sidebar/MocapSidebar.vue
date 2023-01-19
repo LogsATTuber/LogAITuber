@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import "../css/modelsider.css";
+
 export default {
   name: "MocapSidebar",
   data(){

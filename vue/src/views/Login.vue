@@ -36,7 +36,7 @@
           </el-row>
         </el-form-item>
 
-        <el-form-item  class="button-container">
+        <el-form-item  class="login-button-container">
           <el-button class="login-button" type="primary"  @click="login">登 录</el-button>
           <el-button class="login-button" type="primary"  @click="goRegister">注 册</el-button>
 

@@ -21,8 +21,8 @@
           <el-input  style="width: 260px" v-model ="form.confirm" show-password ></el-input>
           <label>确认密码</label>
         </el-form-item >
-        <el-form-item class="button-container">
-          <el-button type="primary" class="login-button" @click="back">返回</el-button>
+        <el-form-item style="margin-left: 40px" class="button-container">
+          <el-button type="primary" style="width: 80px" class="login-button" @click="back">返回</el-button>
           <el-button type="primary" class="login-button" @click="register">立即注册</el-button>
         </el-form-item>
       </el-form>
